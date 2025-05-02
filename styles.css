@@ -1,0 +1,97 @@
+/* Hauptstil für die Karte und UI-Elemente */
+#map { 
+  height: 90vh; 
+  width: 100%; 
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+#fileInput { 
+  margin-right: 15px;
+}
+
+
+
+.locate-button {
+  background: white;
+  border: 2px solid #666;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.accuracy-info {
+  margin: 10px;
+  font-size: 14px;
+}
+
+.user-marker {
+  z-index: 1000;
+}
+
+/* Verbesserte Standortanzeige */
+.position-dot {
+  background-color: #4285F4;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Genauigkeitsanzeige */
+#accuracy {
+  background: white; 
+  padding: 8px; 
+  border-radius: 4px; 
+  display: inline-block;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* Legende Styling */
+.legend {
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+.legend img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.legend h4 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Popup Styling */
+.leaflet-popup-content {
+  line-height: 1.5;
+}
+
+.leaflet-popup-content h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.leaflet-popup-content strong {
+  color: #333;
+}
+
+.leaflet-popup-content small {
+  color: #666;
+  display: block;
+  margin-top: 2px;
+}
